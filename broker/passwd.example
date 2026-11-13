@@ -1,0 +1,8 @@
+# Usuários do broker (SEM senhas). O arquivo real "passwd" fica fora do Git.
+# Gerar as senhas com hash, dentro do container:
+#   docker compose exec mosquitto mosquitto_passwd -c /mosquitto/config/passwd esp-lucasg
+#   docker compose exec mosquitto mosquitto_passwd    /mosquitto/config/passwd leitor-lucasg
+#   docker compose exec mosquitto mosquitto_passwd    /mosquitto/config/passwd admin-lucasg
+esp-lucasg
+leitor-lucasg
+admin-lucasg

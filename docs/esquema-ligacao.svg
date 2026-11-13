@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" width="960" height="660" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="660" fill="#ffffff"/>
+
+  <!-- Título -->
+  <text x="480" y="42" text-anchor="middle" font-size="22" font-weight="600" fill="#111827">Esquema de ligação — DHT22 (módulo 3 pinos) × ESP32 DevKit</text>
+  <text x="480" y="66" text-anchor="middle" font-size="13" fill="#6b7280">projeto-iot-lucasg · monitor de temperatura e umidade</text>
+
+  <!-- ===== ESP32 DevKit ===== -->
+  <rect x="60" y="100" width="260" height="360" rx="10" fill="#1e3a5f"/>
+  <text x="80" y="132" font-size="16" font-weight="600" fill="#ffffff">ESP32 DevKit V1</text>
+  <text x="80" y="152" font-size="12" fill="#cbd5e1">esp32-lucasg</text>
+
+  <!-- módulo WROOM -->
+  <rect x="90" y="300" width="140" height="110" rx="4" fill="#9ca3af"/>
+  <rect x="100" y="310" width="120" height="70" rx="2" fill="#6b7280"/>
+  <text x="160" y="350" text-anchor="middle" font-size="11" fill="#ffffff">ESP32-WROOM-32</text>
+  <text x="160" y="398" text-anchor="middle" font-size="10" fill="#374151">antena Wi-Fi</text>
+
+  <!-- pinos usados -->
+  <rect x="306" y="153" width="14" height="14" fill="#fbbf24"/>
+  <rect x="306" y="203" width="14" height="14" fill="#fbbf24"/>
+  <rect x="306" y="253" width="14" height="14" fill="#fbbf24"/>
+  <text x="296" y="165" text-anchor="end" font-size="14" font-weight="600" fill="#ffffff">3V3</text>
+  <text x="296" y="215" text-anchor="end" font-size="14" font-weight="600" fill="#ffffff">GND</text>
+  <text x="296" y="265" text-anchor="end" font-size="14" font-weight="600" fill="#ffffff">D4 (GPIO4)</text>
+
+  <!-- pinos não usados -->
+  <rect x="308" y="305" width="10" height="10" fill="#64748b"/>
+  <rect x="308" y="330" width="10" height="10" fill="#64748b"/>
+  <rect x="308" y="355" width="10" height="10" fill="#64748b"/>
+  <rect x="308" y="380" width="10" height="10" fill="#64748b"/>
+  <rect x="308" y="405" width="10" height="10" fill="#64748b"/>
+
+  <!-- USB -->
+  <rect x="160" y="450" width="60" height="30" rx="3" fill="#6b7280"/>
+  <text x="190" y="500" text-anchor="middle" font-size="12" fill="#374151">USB 5 V — alimentação e serial</text>
+
+  <!-- ===== Fios ===== -->
+  <line x1="320" y1="160" x2="640" y2="160" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/>
+  <line x1="320" y1="210" x2="640" y2="210" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <line x1="320" y1="260" x2="640" y2="260" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="320" cy="160" r="5" fill="#dc2626"/>
+  <circle cx="640" cy="160" r="5" fill="#dc2626"/>
+  <circle cx="320" cy="210" r="5" fill="#111827"/>
+  <circle cx="640" cy="210" r="5" fill="#111827"/>
+  <circle cx="320" cy="260" r="5" fill="#d97706"/>
+  <circle cx="640" cy="260" r="5" fill="#d97706"/>
+  <text x="480" y="150" text-anchor="middle" font-size="13" font-weight="600" fill="#dc2626">3,3 V</text>
+  <text x="480" y="200" text-anchor="middle" font-size="13" font-weight="600" fill="#111827">GND</text>
+  <text x="480" y="250" text-anchor="middle" font-size="13" font-weight="600" fill="#b45309">DATA · protocolo de 1 fio</text>
+
+  <!-- ===== Tabela de ligações ===== -->
+  <rect x="345" y="300" width="270" height="110" rx="6" fill="#f9fafb" stroke="#e5e7eb"/>
+  <text x="360" y="324" font-size="12" font-weight="600" fill="#374151">ESP32</text>
+  <text x="450" y="324" font-size="12" font-weight="600" fill="#374151">Módulo DHT22</text>
+  <text x="550" y="324" font-size="12" font-weight="600" fill="#374151">Fio</text>
+  <line x1="355" y1="332" x2="605" y2="332" stroke="#e5e7eb"/>
+  <text x="360" y="352" font-size="12" fill="#111827">3V3</text>
+  <text x="450" y="352" font-size="12" fill="#111827">+ (VCC)</text>
+  <text x="550" y="352" font-size="12" fill="#dc2626">vermelho</text>
+  <text x="360" y="376" font-size="12" fill="#111827">GND</text>
+  <text x="450" y="376" font-size="12" fill="#111827">− (GND)</text>
+  <text x="550" y="376" font-size="12" fill="#111827">preto</text>
+  <text x="360" y="400" font-size="12" fill="#111827">GPIO4</text>
+  <text x="450" y="400" font-size="12" fill="#111827">OUT (DATA)</text>
+  <text x="550" y="400" font-size="12" fill="#b45309">amarelo</text>
+
+  <!-- ===== Módulo DHT22 ===== -->
+  <rect x="640" y="110" width="260" height="200" rx="8" fill="#1d4ed8"/>
+  <rect x="626" y="153" width="14" height="14" fill="#fbbf24"/>
+  <rect x="626" y="203" width="14" height="14" fill="#fbbf24"/>
+  <rect x="626" y="253" width="14" height="14" fill="#fbbf24"/>
+  <text x="652" y="165" font-size="14" font-weight="600" fill="#ffffff">+ VCC</text>
+  <text x="652" y="215" font-size="14" font-weight="600" fill="#ffffff">− GND</text>
+  <text x="652" y="265" font-size="14" font-weight="600" fill="#ffffff">OUT</text>
+
+  <!-- corpo do sensor -->
+  <rect x="760" y="125" width="120" height="170" rx="4" fill="#f9fafb" stroke="#d1d5db"/>
+  <g fill="#d1d5db">
+    <rect x="775" y="140" width="18" height="10"/><rect x="801" y="140" width="18" height="10"/><rect x="827" y="140" width="18" height="10"/><rect x="853" y="140" width="12" height="10"/>
+    <rect x="775" y="160" width="18" height="10"/><rect x="801" y="160" width="18" height="10"/><rect x="827" y="160" width="18" height="10"/><rect x="853" y="160" width="12" height="10"/>
+    <rect x="775" y="180" width="18" height="10"/><rect x="801" y="180" width="18" height="10"/><rect x="827" y="180" width="18" height="10"/><rect x="853" y="180" width="12" height="10"/>
+    <rect x="775" y="200" width="18" height="10"/><rect x="801" y="200" width="18" height="10"/><rect x="827" y="200" width="18" height="10"/><rect x="853" y="200" width="12" height="10"/>
+    <rect x="775" y="220" width="18" height="10"/><rect x="801" y="220" width="18" height="10"/><rect x="827" y="220" width="18" height="10"/><rect x="853" y="220" width="12" height="10"/>
+  </g>
+  <text x="820" y="260" text-anchor="middle" font-size="13" font-weight="600" fill="#111827">DHT22</text>
+  <text x="820" y="278" text-anchor="middle" font-size="11" fill="#6b7280">AM2302</text>
+
+  <!-- detalhe do pull-up -->
+  <rect x="640" y="340" width="260" height="110" rx="6" fill="none" stroke="#9ca3af" stroke-dasharray="6 4"/>
+  <text x="770" y="364" text-anchor="middle" font-size="12" font-weight="600" fill="#374151">Já soldado no módulo</text>
+  <text x="660" y="405" font-size="12" fill="#111827">VCC</text>
+  <line x1="690" y1="400" x2="720" y2="400" stroke="#111827" stroke-width="2"/>
+  <path d="M720 400 l8 -10 l10 20 l10 -20 l10 20 l10 -20 l10 20 l10 -20 l10 20 l8 -10" fill="none" stroke="#111827" stroke-width="2"/>
+  <line x1="806" y1="400" x2="830" y2="400" stroke="#111827" stroke-width="2"/>
+  <text x="836" y="405" font-size="12" fill="#111827">DATA</text>
+  <text x="770" y="435" text-anchor="middle" font-size="12" fill="#374151">resistor de pull-up 10 kΩ</text>
+
+  <text x="770" y="475" text-anchor="middle" font-size="11" fill="#6b7280">A ordem dos pinos muda entre módulos: confira a serigrafia.</text>
+
+  <!-- ===== Notas ===== -->
+  <rect x="40" y="515" width="880" height="130" rx="8" fill="#f3f4f6"/>
+  <text x="60" y="542" font-size="13" fill="#111827">• Alimentação em 3,3 V: o pull-up leva DATA a 3,3 V, nível seguro para o GPIO do ESP32 (máx. 3,6 V). Não use 5 V no VCC.</text>
+  <text x="60" y="568" font-size="13" fill="#111827">• GPIO4: E/S de uso geral, sem função de boot. Evitar GPIO 0, 2, 12 e 15 (strapping), 6–11 (flash) e 34–39 (só entrada).</text>
+  <text x="60" y="594" font-size="13" fill="#111827">• Intervalo mínimo entre leituras: 2 s (datasheet). O firmware lê a cada 10 s com millis(), sem delay().</text>
+  <text x="60" y="620" font-size="13" fill="#111827">• Sensor a ≥ 10 cm do ESP32 e do regulador, cabo curto (≤ 1 m em 3,3 V), longe de sol direto e de saídas de ar.</text>
+</svg>

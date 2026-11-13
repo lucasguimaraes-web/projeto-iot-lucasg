@@ -1,0 +1,19 @@
+# Grafana em container — semana 5
+# Subir:  cp .env.example .env  (troque a senha)  &&  docker compose up -d
+services:
+  grafana:
+    image: grafana/grafana:11.3.0
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file: .env
+    environment:
+      - GF_INSTALL_PLUGINS=yesoreyeram-infinity-datasource
+    extra_hosts:
+      - "host.docker.internal:host-gateway"   # para alcançar a API que roda na VM
+    volumes:
+      - grafana-data:/var/lib/grafana
+
+volumes:
+  grafana-data:

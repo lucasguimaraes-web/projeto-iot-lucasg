@@ -1,0 +1,26 @@
+# ---- Credenciais (nunca no Git) ----
+firmware/include/secrets.h
+servidor/.env
+grafana/.env
+broker/passwd
+
+# ---- Dados gerados pelos containers ----
+broker/data/
+broker/log/
+grafana/data/
+
+# ---- PlatformIO / VS Code ----
+firmware/.pio/
+firmware/.vscode/
+.vscode/
+
+# ---- Python ----
+servidor/.venv/
+.venv/
+__pycache__/
+*.pyc
+
+# ---- Sistema ----
+.DS_Store
+Thumbs.db
+desktop.ini

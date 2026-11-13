@@ -1,0 +1,16 @@
+# Broker Mosquitto 2 em container — semana 2
+# Subir:   docker compose up -d
+# Logs:    docker compose logs -f
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2.0.20
+    container_name: mosquitto
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./acl:/mosquitto/config/acl:ro
+      - ./passwd:/mosquitto/config/passwd   # crie o arquivo ANTES de subir (senão o Docker cria uma pasta)
+      - ./data:/mosquitto/data
+      - ./log:/mosquitto/log

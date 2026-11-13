@@ -1,0 +1,16 @@
+# ACL do broker — um usuário por papel, com o menor privilégio possível.
+# Sintaxe: "user <nome>" seguido de linhas "topic [read|write|readwrite] <tópico>"
+#
+# TODO: definir e justificar no README as permissões de cada usuário.
+
+# ESP32
+user esp-lucasg
+# TODO
+
+# Coletor Python
+user leitor-lucasg
+# TODO
+
+# Testes manuais
+user admin-lucasg
+# TODO

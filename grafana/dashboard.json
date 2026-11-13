@@ -1,0 +1,7 @@
+{
+  "title": "Monitor de temperatura e umidade — esp32-lucasg",
+  "description": "Placeholder: substituir pelo dashboard exportado do Grafana (semana 5).",
+  "panels": [],
+  "refresh": "5s",
+  "schemaVersion": 39
+}
